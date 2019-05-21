@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Laravel 5.7 image upload example - HDTuto.com</title>
+    <title></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
     <div class="container">
         <div class="panel panel-primary">
-        <div class="panel-heading"><h2>Laravel 5.7 image upload example - HDTuto.com</h2></div>
+        <div class="panel-heading"><h2></h2></div>
         <div class="panel-body">
 
-            @if ($message = Session::get('success'))        
+            @if ($message = Session::get('success'))
                 <div class="alert alert-success alert-block">
                     <button type="button" class="close" data-dismiss="alert">×</button>
                         <strong>{{ $message }}</strong>

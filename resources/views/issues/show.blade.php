@@ -19,7 +19,7 @@
         <div class="card">
             <div class="card-body">
                     <p class="card-text">Организация: <strong>{{ $issue->organization }}</strong> {{ $issue->is_client ? '(наш клиент)' : '' }} <br>
-                    Номер телефона: <strong>{{ $issue->phone_number }}</strong> <br>  
+                    Номер телефона: <strong>{{ $issue->phone_number }}</strong> <br>
                     ФИО клиента: <strong>{{ $issue->name }}</strong></p>
             </div>
         </div>
@@ -40,13 +40,13 @@
                         <hr>
                         <div class="row">
                             <a class="btn btn-primary" href="/issues/{{ $issue->id }}/edit">Редактировать</a>
-                
+
                             <form method="POST" action="/issues/{{ $issue->id }}">
                                 @method('DELETE')
-                                @csrf          
+                                @csrf
                                 <button class="btn btn-danger" type="submit">Удалить</button>
                             </form>
-                        </div>     
+                        </div>
                 </div>
         </div>
 

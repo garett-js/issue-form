@@ -1,7 +1,6 @@
 @extends('layout')
 
 @section('content')
-
         @foreach ($issues as $issue)
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
@@ -11,15 +10,11 @@
                         для {{ $issue->employee->name }}</a>
                 </li>
             </ul>
-                
         @endforeach
 
     <div class="navigation">
         {{ $issues->links() }}
     </div>
-    
     <hr>
-    
-    <a href="/issues/create" class="button is-link">Добавить заявку</a>        
-
+    <a href="/issues/create" class="button is-link">Добавить заявку</a>
 @endsection
